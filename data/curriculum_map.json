@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Kids Gym — Curriculum Map",
+    "ages": "5–12",
+    "duration": "60 min per lesson",
+    "frequency": "once per week",
+    "room": "Plum Pudding gym, 9m × 5m, hard floor",
+    "status": "draft — progression framework being built"
+  },
+  "progression_principles": [
+    "Tumbling: each skill must be solid before introducing the next. Spend 2–3 lessons on each skill.",
+    "Sport: rotate every 2–4 lessons. Teach fundamentals first (ball control), then partner/group play.",
+    "Muscle focus: cycle Core → Upper → Lower → Full body across 4 lessons.",
+    "Relay/Game: vary the type (speed, memory, skill-transfer) to develop different capacities.",
+    "FMS balance: every month should cover locomotion, object control, and stability."
+  ],
+  "tumbling_sequence": [
+    "Forward Roll",
+    "Backward Roll",
+    "Cartwheel",
+    "Handstand (against wall)",
+    "Bridge",
+    "Round-Off",
+    "Headstand",
+    "Back Walkover (advanced)"
+  ],
+  "sport_rotation": [
+    "Soccer",
+    "Basketball",
+    "Volleyball",
+    "Tennis",
+    "Baseball / Softball",
+    "Judo / Grappling",
+    "Athletics (sprints, jumps, throws)",
+    "Frisbee / Disc"
+  ],
+  "muscle_cycle": ["Core", "Upper body", "Lower body", "Full body"],
+  "lessons": [
+    {
+      "number": 1,
+      "tumbling": "Forward Roll",
+      "sport": "Soccer",
+      "muscle": "Core",
+      "relay": "Shuttle Run (colour match)",
+      "fms_focus": "Stability + Object control",
+      "lesson_file": "lesson_01_forward_roll"
+    },
+    {
+      "number": 2,
+      "tumbling": "Forward Roll (consolidation + stand-up clean)",
+      "sport": "Basketball",
+      "muscle": "Upper body",
+      "relay": "Beanbag relay",
+      "fms_focus": "Object control + Locomotion",
+      "lesson_file": null
+    },
+    {
+      "number": 3,
+      "tumbling": "Backward Roll (introduction)",
+      "sport": "Basketball",
+      "muscle": "Lower body",
+      "relay": "Hoop relay",
+      "fms_focus": "Stability + Locomotion",
+      "lesson_file": null
+    },
+    {
+      "number": 4,
+      "tumbling": "Backward Roll (consolidation)",
+      "sport": "Volleyball",
+      "muscle": "Full body",
+      "relay": "Team game (Parachute or Dodge Ball)",
+      "fms_focus": "Object control + Stability",
+      "lesson_file": null
+    },
+    {
+      "number": 5,
+      "tumbling": "Cartwheel (introduction)",
+      "sport": "Volleyball",
+      "muscle": "Core",
+      "relay": "Weaving relay",
+      "fms_focus": "Stability + Locomotion",
+      "lesson_file": null
+    },
+    {
+      "number": 6,
+      "tumbling": "Cartwheel (consolidation)",
+      "sport": "Tennis",
+      "muscle": "Upper body",
+      "relay": "Speed relay",
+      "fms_focus": "Object control + Locomotion",
+      "lesson_file": null
+    },
+    {
+      "number": 7,
+      "tumbling": "Handstand (against wall)",
+      "sport": "Tennis",
+      "muscle": "Lower body",
+      "relay": "Memory relay",
+      "fms_focus": "Stability + Locomotion",
+      "lesson_file": null
+    },
+    {
+      "number": 8,
+      "tumbling": "Handstand (consolidation + kick-up)",
+      "sport": "Baseball / Softball",
+      "muscle": "Full body",
+      "relay": "Across the gym relay",
+      "fms_focus": "Object control + Stability",
+      "lesson_file": null
+    },
+    {
+      "number": 9,
+      "tumbling": "Bridge",
+      "sport": "Baseball / Softball",
+      "muscle": "Core",
+      "relay": "Tunnel relay",
+      "fms_focus": "Stability + Locomotion",
+      "lesson_file": null
+    },
+    {
+      "number": 10,
+      "tumbling": "Bridge + Back bend (if ready)",
+      "sport": "Judo fundamentals",
+      "muscle": "Upper body",
+      "relay": "Partner relay",
+      "fms_focus": "Stability + Object control",
+      "lesson_file": null
+    },
+    {
+      "number": 11,
+      "tumbling": "Round-Off",
+      "sport": "Judo fundamentals",
+      "muscle": "Lower body",
+      "relay": "Hoop + beanbag relay",
+      "fms_focus": "Locomotion + Stability",
+      "lesson_file": null
+    },
+    {
+      "number": 12,
+      "tumbling": "Round-Off (consolidation)",
+      "sport": "Athletics (sprint + jump)",
+      "muscle": "Full body",
+      "relay": "Obstacle relay",
+      "fms_focus": "Locomotion + Stability",
+      "lesson_file": null
+    }
+  ]
+}
