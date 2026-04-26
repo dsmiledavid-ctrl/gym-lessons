@@ -1,8 +1,10 @@
 # Gym Lesson Planning — Situation Doc
 
-**Last updated:** 2026-04-25  
+**Last updated:** 2026-04-26 (Session 2)  
 **NotebookLM notebook:** Kids Gym Lesson Planning (`a2e57998-9b01-4727-bea0-b0d677bb3b97`)  
-**NotebookLM conversation ID:** (none yet)
+**NotebookLM conversation ID:** (none yet)  
+**Web app:** https://gym-lessons.vercel.app/  
+**GitHub repo:** https://github.com/dsmiledavid-ctrl/gym-lessons
 
 ---
 
@@ -114,13 +116,13 @@ Fully feasible highlights:
 
 - [ ] **"6 big size" equipment** — what exactly are these? (gym balls? something else?)
 - [ ] **My Gym lesson plan documents** — the actual weekly program PDFs from My Gym Japan. Not yet found on filesystem.
-- [x] **Student/group details** — school-aged, mostly 5–10 years old. Filter out baby/toddler activities (Baby Football, Baby Bowling, puppet endings, etc.)
-- [x] **Lesson structure decision** — finalised (see below)
+- [x] **Student/group details** — school-aged, mostly 5–10 years old. Filter out baby/toddler activities
+- [x] **Lesson structure decision** — finalised
 - [ ] **Favorite activity homepages** — URLs Imre likes for activity inspiration
 - [ ] **Theme connection** — should lessons tie to Plum Pudding's weekly themes? Or be standalone?
-- [ ] **"6 big size" equipment** — what exactly are these? (gym balls? something else?)
-- [ ] **My Gym lesson plan documents** — the actual weekly program PDFs from My Gym Japan. Not yet found on filesystem.
-- [ ] **Lesson 01 feedback** — Imre is running lesson_01_forward_roll.md today. Return with notes.
+- [ ] **Lesson 01 feedback** — still pending. Use Teacher Notes section in lesson file.
+- [ ] **FMS new findings not yet in curriculum_map** — distributed practice, speed bursts (5–8 sec + 30 sec rest), maze games, small-sided games. Add next session.
+- [ ] **Vercel DASHBOARD_PASSWORD** — needs to be set in Vercel env vars to activate password protection.
 
 ---
 
@@ -146,20 +148,45 @@ Fully feasible highlights:
 
 ## Lessons produced
 
-| File | Tumbling | Sport | Relay | Status |
-|---|---|---|---|---|
-| `lessons/lesson_01_forward_roll.md` | Forward Roll | Soccer | Shuttle Run | Written — running today |
+- `lessons/lesson_01_forward_roll.md` — Forward Roll · Soccer · Core · Shuttle Run — reformatted session 2
+
+---
+
+## Web app
+
+**URL:** https://gym-lessons.vercel.app/  
+**Repo:** https://github.com/dsmiledavid-ctrl/gym-lessons  
+**Stack:** Next.js 16 · Tailwind · shadcn · OpenAI GPT-4o · Vercel  
+**Features:** Curriculum map · Lesson library · AI lesson generator (2-page output) · Password protection · Try Again button  
+**Data flow:** Lessons are `.md` files in `lessons/` — commit to git → Vercel auto-redeploys → visible in app  
+**Auth:** HTTP Basic Auth via middleware — set `DASHBOARD_PASSWORD` in Vercel env vars
 
 ---
 
 ## Current status
 
-Session 1 complete. All foundations in place. First lesson written and being tested today.  
-**Next action:** Imre runs lesson_01 and returns with feedback → use feedback to refine template and write lesson_02.
+Session 2 complete. Framework research done, web app built and deployed, curriculum map created with sourced progression rules.  
+**Next action:** Imre brings lesson_01 feedback → fill Teacher Notes → generate lesson_02 via the web app.
 
 ---
 
 ## Session notes
+
+### 2026-04-26 — Session 2
+- Reformatted lesson_01 — no markdown tables, 2-page max (reference card + exercise guide)
+- Saved lesson format rules to memory (no tables, 2-page, dense reference card)
+- Web research: 8 parallel searches across FMS, LTAD, gymnastics, soccer, basketball, volleyball, tennis, baseball, judo
+- Added 18 sources to NotebookLM notebook `a2e57998` (all ready)
+- Built and deployed web app: https://gym-lessons.vercel.app/ (Next.js + OpenAI GPT-4o + Vercel)
+- App features: curriculum map, lesson library, AI 2-page lesson generator, password protection, try-again button
+- GitHub repo initialized: https://github.com/dsmiledavid-ctrl/gym-lessons
+- NotebookLM queries: FMS/LTAD principles, sport sequences (soccer/basketball/volleyball/tennis/baseball), judo curriculum — all successful
+- Gymnastics query timed out — Imre ran it manually and shared results
+- **Key correction from YMCA source**: tumbling sequence is forward roll → backward roll → mule kicks → handstand → cartwheel (NOT cartwheel before handstand — arm strength from handstand is prerequisite for safe cartwheel)
+- curriculum_map.json built with: framework principles, sourced coaching cues + common errors, sport sequences per lesson, 12-lesson skeleton
+- Generator (GPT-4o) now receives framework context, tumbling cues, and sport sequence for each lesson
+- Imre's judo background confirmed: former Hungarian youth national champion — he can evaluate judo sources critically
+- Partial FMS findings from second manual query not yet incorporated (speed bursts, maze games, distributed practice)
 
 ### 2026-04-25 — Session 1
 - Explored full filesystem to understand existing materials
