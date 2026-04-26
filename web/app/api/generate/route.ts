@@ -43,6 +43,66 @@ Brief descriptions for each section.
 Then: ## TEACHER NOTES
 Empty template with: What worked / What didn't / Tumbling level / Who needs support / Who's ready to progress / Relay timing / Change next time`
 
+interface CurriculumMap {
+  progression_principles: string[]
+  framework_principles: {
+    core: string[]
+    tumbling_readiness_criteria: Record<string, string>
+    tumbling_sessions_per_skill: string
+    tumbling_coaching_cues: Record<string, {
+      key_cue: string
+      common_errors: string[]
+      progressions: string[]
+    }>
+  }
+  sport_sequences: Record<string, Record<string, string>>
+  lessons: Array<{
+    number: number
+    tumbling: string
+    tumbling_focus: string
+    sport: string
+    sport_focus: string
+    muscle: string
+  }>
+}
+
+function buildCurriculumContext(map: CurriculumMap, tumbling: string, sport: string, lessonNumber: number): string {
+  const parts: string[] = []
+
+  // Core framework principles
+  parts.push('FRAMEWORK PRINCIPLES (from LTAD, FMS, sport federations):')
+  parts.push(map.framework_principles.core.join('\n'))
+
+  // Tumbling-specific guidance
+  const tumblingKey = tumbling.toLowerCase().split(' ')[0].replace(/[^a-z]/g, '_')
+  const cues = map.framework_principles.tumbling_coaching_cues[tumblingKey]
+  if (cues) {
+    parts.push(`\nTUMBLING GUIDANCE — ${tumbling}:`)
+    parts.push(`Key cue: ${cues.key_cue}`)
+    parts.push(`Common errors: ${cues.common_errors.join(' | ')}`)
+    parts.push(`Progressions: ${cues.progressions.join(' → ')}`)
+  }
+
+  // Readiness / focus from lesson schedule
+  const lessonData = map.lessons.find(l => l.number === lessonNumber)
+  if (lessonData?.tumbling_focus) {
+    parts.push(`\nTHIS LESSON'S TUMBLING FOCUS: ${lessonData.tumbling_focus}`)
+  }
+
+  // Sport sequence guidance
+  const sportSeq = map.sport_sequences[sport]
+  if (sportSeq && lessonData?.sport_focus) {
+    parts.push(`\nSPORT SEQUENCE GUIDANCE — ${sport}: ${lessonData.sport_focus}`)
+  } else if (sportSeq) {
+    parts.push(`\nSPORT SEQUENCE — ${sport}: ${Object.values(sportSeq).join(' | ')}`)
+  }
+
+  // Progression principles
+  parts.push(`\nPROGRESSION RULES:\n${map.progression_principles.join('\n')}`)
+
+  return parts.join('\n')
+}
+
 export async function POST(req: NextRequest) {
   const { lessonNumber, tumbling, sport, muscle, relay, notes } = await req.json()
 
@@ -50,12 +110,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'tumbling and sport are required' }, { status: 400 })
   }
 
-  // Load curriculum map for context
   let curriculumContext = ''
   try {
     const mapPath = path.join(process.cwd(), '..', 'data', 'curriculum_map.json')
-    const map = JSON.parse(fs.readFileSync(mapPath, 'utf-8'))
-    curriculumContext = `\n\nCURRICULUM CONTEXT:\n${map.progression_principles.join('\n')}`
+    const map: CurriculumMap = JSON.parse(fs.readFileSync(mapPath, 'utf-8'))
+    curriculumContext = buildCurriculumContext(map, tumbling, sport, parseInt(lessonNumber) || 0)
   } catch {}
 
   const userPrompt = `Write a complete 2-page lesson plan for:
@@ -64,8 +123,11 @@ Tumbling skill: ${tumbling}
 Sport of the week: ${sport}
 Muscle focus: ${muscle || 'Core'}
 Relay/Game: ${relay || 'Shuttle Run'}
-${notes ? `Additional notes: ${notes}` : ''}
+${notes ? `Teacher notes from previous lesson: ${notes}` : ''}
+
 ${curriculumContext}
+
+Use the framework principles and tumbling guidance above to determine which progressions to include and what to watch for. If teacher notes describe specific problems (e.g. rolling over head, can't stand without hands), address those directly in the lesson.
 
 Output only the lesson plan markdown. No preamble.`
 

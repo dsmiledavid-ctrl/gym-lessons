@@ -5,15 +5,121 @@
     "duration": "60 min per lesson",
     "frequency": "once per week",
     "room": "Plum Pudding gym, 9m × 5m, hard floor",
-    "status": "draft — progression framework being built"
+    "status": "framework-informed draft"
   },
+
+  "framework_principles": {
+    "source": "LTAD, FMS, IJF Judo in Schools, US Youth Soccer, ITF, USA Volleyball",
+    "core": [
+      "Teach ABCs of athleticism first: Agility, Balance, Coordination, Speed.",
+      "Gross motor before fine motor. Head-to-toe progression. Simple to complex.",
+      "Variable practice beats blocked practice — mix skills within a lesson for better long-term retention.",
+      "It takes ~8 weeks of repetition for a movement to become muscle memory. Do not rush progressions.",
+      "Intensity rhythm per lesson: low → medium → high → medium → high → low.",
+      "If focus drops, intercept with a 2-5 min tag or relay game, then return.",
+      "Three FMS categories must rotate monthly: Locomotor · Object control · Stability."
+    ],
+    "tumbling_readiness_criteria": {
+      "forward_roll": "Can squat, place hands flat, tuck chin. Rolls without falling sideways. Stands at end.",
+      "backward_roll": "Forward roll is consistent (chin stays tucked, no sideways deviation). Can bear weight on hands.",
+      "cartwheel": "Can do a confident hurdle step. Handstand shape understood (straight body, arms by ears).",
+      "handstand": "Cartwheel is controlled. Strong enough to briefly hold weight on straight arms.",
+      "bridge": "Flexible enough to place hands flat beside head from lying down. Comfortable with back extension.",
+      "round_off": "Cartwheel is consistent. Understands the snap-down and push from the floor."
+    },
+    "tumbling_sessions_per_skill": "2–3 lessons minimum per skill before introducing the next. Faster learners get progressions within the same skill (e.g. run-up, two-in-a-row, skill combo).",
+    "tumbling_coaching_cues": {
+      "forward_roll": {
+        "key_cue": "Look at your belly button.",
+        "common_errors": [
+          "Rolling over the top of the head (headstand roll) → chin not tucked. Slow down, press chin to chest before rolling.",
+          "Rolling sideways → chin still not tucked. Use the key cue.",
+          "Cannot stand without hands → momentum lost. Coach to tuck chin all the way through and pop hips forward."
+        ],
+        "progressions": ["Shape only (hold)", "First roll (supported)", "Clean stand (no hands)", "Two-in-a-row", "Run-up + roll", "Roll + jump landing"]
+      },
+      "backward_roll": {
+        "key_cue": "Push the floor away — hands save your neck.",
+        "common_errors": [
+          "Rolling onto the neck (dangerous) → hands not placed early enough or not pushing.",
+          "Cannot get over → lacks hip flexibility or momentum. Start with rock-and-roll on spine first."
+        ],
+        "progressions": ["Rock-and-roll on back", "Backward roll from squat (hands ready)", "Backward roll from standing", "Two-in-a-row"]
+      },
+      "cartwheel": {
+        "key_cue": "One hand, other hand, one foot, other foot — like a clock.",
+        "common_errors": [
+          "Both hands landing at same time → rushing. Slow down, place one hand then the other.",
+          "Bent arms → upper body not strong enough yet. Build handstand holds first."
+        ],
+        "progressions": ["Star jump (awareness of wide shape)", "Cartwheel on a chalk/tape line", "Cartwheel with hurdle step", "Round-off prep"]
+      },
+      "handstand": {
+        "key_cue": "Squeeze your ears with your arms. Body like a straight plank.",
+        "common_errors": [
+          "Banana back (arching) → core not engaged. Do hollow body holds first.",
+          "Kicking too hard → loses control. Kick gently, find balance."
+        ],
+        "progressions": ["Downward dog hold", "Wall handstand (kick up)", "Wall handstand (walk feet up)", "Chest-to-wall handstand", "Free handstand (partner spotted)"]
+      }
+    }
+  },
+
+  "sport_sequences": {
+    "Soccer": {
+      "lesson_1": "Dribbling — inside foot, little taps, keep ball close. Cue: tap don't boot.",
+      "lesson_2": "Passing — plant foot next to ball, kick through center. Cue: toes point at target.",
+      "lesson_3": "Shooting + small-sided game. Cue: aim low, follow through."
+    },
+    "Basketball": {
+      "lesson_1": "Bounce and catch — two hands, watch the ball. Then dribbling with dominant hand.",
+      "lesson_2": "Dribbling alternating hands + bounce pass. Cue: push down, not slap.",
+      "lesson_3": "Chest pass + shooting (BEEF: Balance, Eyes, Elbow, Follow-through)."
+    },
+    "Volleyball": {
+      "lesson_1": "Forearm pass (bump) — wrists together, flat platform, angle toward target. Cue: straight and simple.",
+      "lesson_2": "Overhead set — hands form triangle above forehead, push up like superman. Cue: make a window.",
+      "lesson_3": "Underhand serve — bow and arrow stance. Place, step, hit. Cue: firm heel of open hand."
+    },
+    "Tennis": {
+      "lesson_1": "Balloon and racket — tap and balance to develop touch. Then forehand with red ball on small court.",
+      "lesson_2": "Forehand + backhand rally. Key: use slower balls (red/orange). Cue: ready position between hits.",
+      "lesson_3": "Rallying games + underhand serve intro. Score from first lesson — modify rules to allow it."
+    },
+    "Baseball / Softball": {
+      "lesson_1": "Hitting — stance, contact point, finish. Cue: freeze at finish to check balance.",
+      "lesson_2": "Catching (two hands, soft hands, give when you catch) + throwing (ready → throwing position → throw).",
+      "lesson_3": "Fielding ground balls (alligator hands, knees bent, head up) + baserunning circuit."
+    },
+    "Judo fundamentals": {
+      "lesson_1": "Etiquette + ukemi (falling safely: back, side, front). Cue: protect your head first. Ne-waza games on the mat.",
+      "lesson_2": "Shrimping, crawling, rolling — ground movement games. Balance and grip awareness.",
+      "lesson_3": "Kuzushi (breaking balance) through movement games. No static lifting. Use momentum."
+    },
+    "Athletics": {
+      "lesson_1": "Sprint mechanics (arm drive, knee lift) + standing broad jump.",
+      "lesson_2": "Running long jump (approach + takeoff) + throwing (beanbag or ball for distance).",
+      "lesson_3": "Combined mini-athletics circuit: sprint, jump, throw, relay."
+    },
+    "Frisbee / Disc": {
+      "lesson_1": "Backhand throw grip and release. Catch with two hands. Short distance.",
+      "lesson_2": "Backhand + forehand throw. Increase distance. Partner rally.",
+      "lesson_3": "Disc games — Ultimate Frisbee rules simplified, or target throws."
+    }
+  },
+
+  "judo_lesson_notes": "Judo teaches ABCs naturally. Prioritize ukemi and ne-waza (ground work, 60-70% of time) before any standing throws. Never teach throws requiring static lifting — use momentum only. Etiquette and values (courage, respect, politeness) are part of every lesson.",
+
   "progression_principles": [
-    "Tumbling: each skill must be solid before introducing the next. Spend 2–3 lessons on each skill.",
-    "Sport: rotate every 2–4 lessons. Teach fundamentals first (ball control), then partner/group play.",
-    "Muscle focus: cycle Core → Upper → Lower → Full body across 4 lessons.",
-    "Relay/Game: vary the type (speed, memory, skill-transfer) to develop different capacities.",
-    "FMS balance: every month should cover locomotion, object control, and stability."
+    "Tumbling: 2–3 lessons per skill. Move on only when the readiness criteria are met. Faster learners get within-skill progressions.",
+    "Sport: rotate every 2–4 lessons following the lesson_1 → lesson_2 → lesson_3 sequence per sport.",
+    "Muscle focus: cycle Core → Upper → Lower → Full body across 4 consecutive lessons.",
+    "Relay/Game: vary the type each lesson (speed, memory, skill-transfer, team) to develop different capacities.",
+    "FMS monthly check: every 4 lessons should cover Locomotor + Object control + Stability.",
+    "Variable practice: mix skills within the lesson rather than blocking one skill for the whole session.",
+    "Intensity rhythm per lesson: low → medium → high → medium → high → low."
   ],
+
   "tumbling_sequence": [
     "Forward Roll",
     "Backward Roll",
@@ -24,22 +130,27 @@
     "Headstand",
     "Back Walkover (advanced)"
   ],
+
   "sport_rotation": [
     "Soccer",
     "Basketball",
     "Volleyball",
     "Tennis",
     "Baseball / Softball",
-    "Judo / Grappling",
+    "Judo fundamentals",
     "Athletics (sprints, jumps, throws)",
     "Frisbee / Disc"
   ],
+
   "muscle_cycle": ["Core", "Upper body", "Lower body", "Full body"],
+
   "lessons": [
     {
       "number": 1,
-      "tumbling": "Forward Roll",
+      "tumbling": "Forward Roll — introduction",
+      "tumbling_focus": "Shape only → first roll → clean stand",
       "sport": "Soccer",
+      "sport_focus": "lesson_1: dribbling",
       "muscle": "Core",
       "relay": "Shuttle Run (colour match)",
       "fms_focus": "Stability + Object control",
@@ -47,8 +158,10 @@
     },
     {
       "number": 2,
-      "tumbling": "Forward Roll (consolidation + stand-up clean)",
-      "sport": "Basketball",
+      "tumbling": "Forward Roll — consolidation",
+      "tumbling_focus": "Clean stand-up (no hands) → run-up → two-in-a-row. Watch for: headstand roll (chin not tucked), inability to stand (momentum lost).",
+      "sport": "Soccer",
+      "sport_focus": "lesson_2: passing (plant foot next to ball, kick through center)",
       "muscle": "Upper body",
       "relay": "Beanbag relay",
       "fms_focus": "Object control + Locomotion",
@@ -56,8 +169,10 @@
     },
     {
       "number": 3,
-      "tumbling": "Backward Roll (introduction)",
+      "tumbling": "Backward Roll — introduction",
+      "tumbling_focus": "Rock-and-roll on back → backward roll from squat (hands ready and pushing). Prerequisite: forward roll is consistent.",
       "sport": "Basketball",
+      "sport_focus": "lesson_1: bounce and catch, dribbling with dominant hand",
       "muscle": "Lower body",
       "relay": "Hoop relay",
       "fms_focus": "Stability + Locomotion",
@@ -65,17 +180,21 @@
     },
     {
       "number": 4,
-      "tumbling": "Backward Roll (consolidation)",
-      "sport": "Volleyball",
+      "tumbling": "Backward Roll — consolidation",
+      "tumbling_focus": "Backward roll from standing. Two-in-a-row. Watch for: rolling onto neck (hands must push early).",
+      "sport": "Basketball",
+      "sport_focus": "lesson_2: alternating dribble + bounce pass",
       "muscle": "Full body",
-      "relay": "Team game (Parachute or Dodge Ball)",
+      "relay": "Parachute game or Dodge Ball",
       "fms_focus": "Object control + Stability",
       "lesson_file": null
     },
     {
       "number": 5,
-      "tumbling": "Cartwheel (introduction)",
+      "tumbling": "Cartwheel — introduction",
+      "tumbling_focus": "Star jump awareness → cartwheel on tape line → one hand then other. Prerequisite: handstand shape understood.",
       "sport": "Volleyball",
+      "sport_focus": "lesson_1: forearm pass (bump) — wrists together, flat platform",
       "muscle": "Core",
       "relay": "Weaving relay",
       "fms_focus": "Stability + Locomotion",
@@ -83,8 +202,10 @@
     },
     {
       "number": 6,
-      "tumbling": "Cartwheel (consolidation)",
-      "sport": "Tennis",
+      "tumbling": "Cartwheel — consolidation",
+      "tumbling_focus": "Cartwheel with hurdle step. Round-off prep (snap-down landing). Watch for: both hands landing together.",
+      "sport": "Volleyball",
+      "sport_focus": "lesson_2: overhead set — triangle hands, push up like superman",
       "muscle": "Upper body",
       "relay": "Speed relay",
       "fms_focus": "Object control + Locomotion",
@@ -92,8 +213,10 @@
     },
     {
       "number": 7,
-      "tumbling": "Handstand (against wall)",
+      "tumbling": "Handstand — introduction",
+      "tumbling_focus": "Hollow body hold → downward dog → wall handstand kick-up. Cue: squeeze ears with arms.",
       "sport": "Tennis",
+      "sport_focus": "lesson_1: balloon touch, forehand with red/slow ball on short court",
       "muscle": "Lower body",
       "relay": "Memory relay",
       "fms_focus": "Stability + Locomotion",
@@ -101,8 +224,10 @@
     },
     {
       "number": 8,
-      "tumbling": "Handstand (consolidation + kick-up)",
-      "sport": "Baseball / Softball",
+      "tumbling": "Handstand — consolidation",
+      "tumbling_focus": "Walk feet up wall → chest-to-wall handstand → free handstand (partner spotted). Watch for: banana back.",
+      "sport": "Tennis",
+      "sport_focus": "lesson_2: forehand + backhand rally, ready position between hits",
       "muscle": "Full body",
       "relay": "Across the gym relay",
       "fms_focus": "Object control + Stability",
@@ -111,7 +236,9 @@
     {
       "number": 9,
       "tumbling": "Bridge",
+      "tumbling_focus": "From lying: hands flat beside head, push up → hold → lower. Progress to bridge from standing (advanced).",
       "sport": "Baseball / Softball",
+      "sport_focus": "lesson_1: hitting — stance, contact, finish (freeze to check balance)",
       "muscle": "Core",
       "relay": "Tunnel relay",
       "fms_focus": "Stability + Locomotion",
@@ -119,8 +246,10 @@
     },
     {
       "number": 10,
-      "tumbling": "Bridge + Back bend (if ready)",
+      "tumbling": "Bridge — consolidation + Round-Off introduction",
+      "tumbling_focus": "Bridge hold + rock. Round-off: cartwheel with snap-down landing, feet together. Prerequisite: cartwheel is consistent.",
       "sport": "Judo fundamentals",
+      "sport_focus": "lesson_1: etiquette + ukemi (back fall, side fall). Ne-waza games.",
       "muscle": "Upper body",
       "relay": "Partner relay",
       "fms_focus": "Stability + Object control",
@@ -128,8 +257,10 @@
     },
     {
       "number": 11,
-      "tumbling": "Round-Off",
+      "tumbling": "Round-Off — consolidation",
+      "tumbling_focus": "Round-off from run-up. Land with feet together, arms up. Watch for: feet not snapping together on landing.",
       "sport": "Judo fundamentals",
+      "sport_focus": "lesson_2: shrimping, crawling, ground movement games. Balance and grip awareness.",
       "muscle": "Lower body",
       "relay": "Hoop + beanbag relay",
       "fms_focus": "Locomotion + Stability",
@@ -137,8 +268,10 @@
     },
     {
       "number": 12,
-      "tumbling": "Round-Off (consolidation)",
-      "sport": "Athletics (sprint + jump)",
+      "tumbling": "Combination — student choice",
+      "tumbling_focus": "Each child performs their best 2-skill combination (e.g. forward roll + cartwheel). Celebrate progress.",
+      "sport": "Athletics",
+      "sport_focus": "lesson_1: sprint mechanics + standing broad jump",
       "muscle": "Full body",
       "relay": "Obstacle relay",
       "fms_focus": "Locomotion + Stability",
