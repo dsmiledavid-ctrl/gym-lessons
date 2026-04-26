@@ -196,7 +196,10 @@ function PlanForm() {
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Generated lesson</h2>
-            <Button variant="outline" size="sm" onClick={handleDownload}>Download .md</Button>
+            <div className="flex gap-2">
+              <Button variant="ghost" size="sm" onClick={() => setResult('')}>Try again</Button>
+              <Button variant="outline" size="sm" onClick={handleDownload}>Download .md</Button>
+            </div>
           </div>
           <article className="bg-white border rounded-lg p-8 prose prose-zinc prose-sm max-w-none
             prose-headings:font-semibold prose-headings:tracking-tight
