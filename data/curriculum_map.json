@@ -9,7 +9,7 @@
   },
 
   "framework_principles": {
-    "source": "LTAD, FMS, IJF Judo in Schools, US Youth Soccer, ITF, USA Volleyball",
+    "source": "LTAD, FMS, YMCA Gymnastics Program, IJF Judo in Schools, US Youth Soccer, ITF, USA Volleyball",
     "core": [
       "Teach ABCs of athleticism first: Agility, Balance, Coordination, Speed.",
       "Gross motor before fine motor. Head-to-toe progression. Simple to complex.",
@@ -20,47 +20,56 @@
       "Three FMS categories must rotate monthly: Locomotor · Object control · Stability."
     ],
     "tumbling_readiness_criteria": {
-      "forward_roll": "Can squat, place hands flat, tuck chin. Rolls without falling sideways. Stands at end.",
-      "backward_roll": "Forward roll is consistent (chin stays tucked, no sideways deviation). Can bear weight on hands.",
-      "cartwheel": "Can do a confident hurdle step. Handstand shape understood (straight body, arms by ears).",
-      "handstand": "Cartwheel is controlled. Strong enough to briefly hold weight on straight arms.",
+      "forward_roll": "Child can squat, place hands flat, tuck chin so back of head (not top) touches mat. Rolls without falling sideways. Can stand at end without hands.",
+      "backward_roll": "Forward roll is consistent and independent. Child can bear weight on straight arms (mule kick test). Understands 'pizza hands' position.",
+      "mule_kicks": "Prerequisite to handstand. Child can place hands on floor and kick legs up with straight arms. Builds upper body strength for handstand.",
+      "handstand": "Mule kicks are confident. Child has enough arm strength to briefly support bodyweight. Source note: handstand is taught BEFORE cartwheel.",
+      "cartwheel": "Handstand shape is understood (straight arms, body in line). Child can follow 'hand, hand, foot, foot' rhythm on a line.",
       "bridge": "Flexible enough to place hands flat beside head from lying down. Comfortable with back extension.",
-      "round_off": "Cartwheel is consistent. Understands the snap-down and push from the floor."
+      "round_off": "Cartwheel is consistent. Understands the snap-down landing with feet together."
     },
-    "tumbling_sessions_per_skill": "2–3 lessons minimum per skill before introducing the next. Faster learners get progressions within the same skill (e.g. run-up, two-in-a-row, skill combo).",
+    "tumbling_sessions_per_skill": "Minimum 8 sessions to move from initiation to acquisition phase (YMCA source). At once per week, plan 2–3 lessons per skill. Faster learners get within-skill progressions (run-up, two-in-a-row, combos). Do not rush.",
+    "tumbling_sequence_note": "Source-confirmed order: log rolls / egg rolls → forward roll → backward roll → mule kicks (handstand prep) → handstand → cartwheel → dive roll. Handstand comes BEFORE cartwheel — arm strength from handstand work is what enables a safe cartwheel.",
     "tumbling_coaching_cues": {
       "forward_roll": {
-        "key_cue": "Look at your belly button.",
+        "key_cue": "Tuck your chin so the BACK of your head touches the mat — not the top.",
+        "secondary_cue": "Look at your belly button.",
         "common_errors": [
-          "Rolling over the top of the head (headstand roll) → chin not tucked. Slow down, press chin to chest before rolling.",
-          "Rolling sideways → chin still not tucked. Use the key cue.",
-          "Cannot stand without hands → momentum lost. Coach to tuck chin all the way through and pop hips forward."
+          "Rolling on TOP of head (headstand roll) — most common. Chin not tucked. Slow down, press chin to chest hard before rolling.",
+          "Using hands to push up to stand — momentum lost. Coach to reach forward and stand quickly.",
+          "Rolling sideways — chin still not fully tucked."
         ],
-        "progressions": ["Shape only (hold)", "First roll (supported)", "Clean stand (no hands)", "Two-in-a-row", "Run-up + roll", "Roll + jump landing"]
+        "progressions": ["Egg roll (hug knees, rock back and forth)", "Shape only (squat, hands flat, chin to chest — hold)", "First roll (supported)", "Clean stand — reach forward, no hands, big finish arms up", "Two-in-a-row", "Run-up + roll", "Roll + jump landing"]
       },
       "backward_roll": {
-        "key_cue": "Push the floor away — hands save your neck.",
+        "key_cue": "Pizza hands — palms up by your ears, ready to push.",
         "common_errors": [
-          "Rolling onto the neck (dangerous) → hands not placed early enough or not pushing.",
-          "Cannot get over → lacks hip flexibility or momentum. Start with rock-and-roll on spine first."
+          "Not pushing with hands → lands on knees instead of feet. Hands must push floor away from the start.",
+          "Slow start → no momentum to get over. Need a confident drop back."
         ],
-        "progressions": ["Rock-and-roll on back", "Backward roll from squat (hands ready)", "Backward roll from standing", "Two-in-a-row"]
+        "progressions": ["Rock-and-roll on back (egg roll backward)", "Backward roll from squat with pizza hands", "Backward roll from standing", "Two-in-a-row"]
       },
-      "cartwheel": {
-        "key_cue": "One hand, other hand, one foot, other foot — like a clock.",
-        "common_errors": [
-          "Both hands landing at same time → rushing. Slow down, place one hand then the other.",
-          "Bent arms → upper body not strong enough yet. Build handstand holds first."
-        ],
-        "progressions": ["Star jump (awareness of wide shape)", "Cartwheel on a chalk/tape line", "Cartwheel with hurdle step", "Round-off prep"]
+      "mule_kicks": {
+        "key_cue": "Straight arms, kick both feet up at the same time.",
+        "note": "This is the bridge between backward roll and handstand. Builds the upper body strength and inversion comfort needed for handstand.",
+        "progressions": ["Mule kick from standing (one kick)", "Mule kick with snap down", "Mule kick higher each time"]
       },
       "handstand": {
-        "key_cue": "Squeeze your ears with your arms. Body like a straight plank.",
+        "key_cue": "Strong straight arms. Squeeze your ears. Body like a plank.",
         "common_errors": [
-          "Banana back (arching) → core not engaged. Do hollow body holds first.",
-          "Kicking too hard → loses control. Kick gently, find balance."
+          "Arms bending → head touches mat (dangerous). Child needs more mule kick work first.",
+          "Banana back (arching) → core not engaged. Do hollow body holds first."
         ],
-        "progressions": ["Downward dog hold", "Wall handstand (kick up)", "Wall handstand (walk feet up)", "Chest-to-wall handstand", "Free handstand (partner spotted)"]
+        "progressions": ["Hollow body hold on floor", "Downward dog hold", "Mule kicks", "Wall handstand (kick up)", "Wall handstand (walk feet up)", "Chest-to-wall handstand", "Free handstand (partner spotted)"]
+      },
+      "cartwheel": {
+        "key_cue": "Hand, hand, foot, foot — one at a time, on the line.",
+        "common_errors": [
+          "Both hands landing at same time → rushing. Slow down, say the rhythm out loud.",
+          "Bent arms or legs → arm strength insufficient. More handstand work needed.",
+          "Head touching mat → arms collapsing (dangerous). Rebuild with mule kicks and handstand holds."
+        ],
+        "progressions": ["Ready position — arms up, one foot forward on a line", "Cartwheel on a tape line (slow)", "Cartwheel with hurdle step", "Round-off prep (snap feet together on landing)"]
       }
     }
   },
@@ -123,12 +132,12 @@
   "tumbling_sequence": [
     "Forward Roll",
     "Backward Roll",
-    "Cartwheel",
+    "Mule Kicks (handstand prep)",
     "Handstand (against wall)",
+    "Cartwheel",
     "Bridge",
     "Round-Off",
-    "Headstand",
-    "Back Walkover (advanced)"
+    "Dive Roll (advanced)"
   ],
 
   "sport_rotation": [
@@ -191,8 +200,8 @@
     },
     {
       "number": 5,
-      "tumbling": "Cartwheel — introduction",
-      "tumbling_focus": "Star jump awareness → cartwheel on tape line → one hand then other. Prerequisite: handstand shape understood.",
+      "tumbling": "Mule Kicks — handstand preparation",
+      "tumbling_focus": "Straight arms, kick both feet up simultaneously. Builds upper body strength for handstand. Prerequisite: backward roll is solid. Progress: single kick → higher each time → snap-down landing.",
       "sport": "Volleyball",
       "sport_focus": "lesson_1: forearm pass (bump) — wrists together, flat platform",
       "muscle": "Core",
@@ -202,8 +211,8 @@
     },
     {
       "number": 6,
-      "tumbling": "Cartwheel — consolidation",
-      "tumbling_focus": "Cartwheel with hurdle step. Round-off prep (snap-down landing). Watch for: both hands landing together.",
+      "tumbling": "Handstand — introduction",
+      "tumbling_focus": "Hollow body hold → downward dog → mule kicks → wall handstand kick-up. Cue: strong straight arms, squeeze ears. Handstand comes BEFORE cartwheel — arm strength from here enables safe cartwheel later.",
       "sport": "Volleyball",
       "sport_focus": "lesson_2: overhead set — triangle hands, push up like superman",
       "muscle": "Upper body",
@@ -213,8 +222,8 @@
     },
     {
       "number": 7,
-      "tumbling": "Handstand — introduction",
-      "tumbling_focus": "Hollow body hold → downward dog → wall handstand kick-up. Cue: squeeze ears with arms.",
+      "tumbling": "Handstand — consolidation",
+      "tumbling_focus": "Walk feet up wall → chest-to-wall handstand → free handstand (partner spotted). Watch for: bent arms or banana back. If arms collapse, go back to mule kicks.",
       "sport": "Tennis",
       "sport_focus": "lesson_1: balloon touch, forehand with red/slow ball on short court",
       "muscle": "Lower body",
@@ -224,8 +233,8 @@
     },
     {
       "number": 8,
-      "tumbling": "Handstand — consolidation",
-      "tumbling_focus": "Walk feet up wall → chest-to-wall handstand → free handstand (partner spotted). Watch for: banana back.",
+      "tumbling": "Cartwheel — introduction",
+      "tumbling_focus": "Ready position (arms up, one foot forward on line) → cartwheel on tape line. Cue: hand, hand, foot, foot — one at a time. Prerequisite: handstand shape understood, arms are strong.",
       "sport": "Tennis",
       "sport_focus": "lesson_2: forehand + backhand rally, ready position between hits",
       "muscle": "Full body",
